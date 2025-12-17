@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Герои - Энциклопедия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-dragon logo-icon"></i>
+                    <h1>Dota 2 <span>Герои</span></h1>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Поиск героя...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="heroes-section">
+                <div class="heroes-list">
+                    <h2>Все герои Dota 2</h2>
+                    <div id="heroes-container">
+                        <!-- Герои будут добавлены через JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="hero-details" id="hero-details">
+                    <div class="hero-header">
+                        <div class="hero-avatar-large" id="hero-avatar-large">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="hero-title">
+                            <h2 id="hero-name">Выберите героя</h2>
+                            <div class="hero-role" id="hero-role">Нажмите на героя из списка слева</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3>Здоровье (HP)</h3>
+                            <div class="stat-value" id="hero-hp">0</div>
+                            <div class="hp-bar">
+                                <div class="hp-fill" id="hp-fill"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Мана (MP)</h3>
+                            <div class="stat-value" id="hero-mana">0</div>
+                            <div class="mana-bar">
+                                <div class="mana-fill" id="mana-fill"></div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Сложность</h3>
+                            <div class="stat-value" id="hero-difficulty">
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div style="margin-top: 10px; color: #aaa;" id="difficulty-text">Легкий</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-lore">
+                        <h3>История героя</h3>
+                        <p id="hero-lore">Выберите героя из списка, чтобы узнать его историю и способности.</p>
+                    </div>
+                    
+                    <div class="hero-abilities">
+                        <h3>Способности</h3>
+                        <div class="abilities-container" id="abilities-container">
+                            <!-- Способности будут добавлены через JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-dragon"></i>
+                    <span>Dota 2 Герои</span>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 Энциклопедия героев Dota 2. Все права защищены.</p>
+                    <p>Этот сайт является фанатским проектом и не связан с Valve Corporation.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-steam"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
